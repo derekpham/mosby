@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NuCareers Alternative</title>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+</head>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $.get("/api/jobs", function(data) {
+            $('#stuff').text(data[1]['city']);
+        })
+    });
+</script>
+<body>
+<h1>Welcome to NuCareers Alternative fdsjfsdjlkfj</h1>
+<p id="stuff"></p>
+</body>
+</html>
