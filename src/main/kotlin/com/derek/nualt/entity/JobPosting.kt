@@ -1,9 +1,13 @@
 package com.derek.nualt.entity
 
-data class JobPosting(
-        val nuCareersId: Int,
-        val minWage: Int = 0,
-        val maxWage: Int = 0,
-        val title: String,
-        val company: String
+import javax.persistence.Entity
+import javax.persistence.Id
+
+@Entity
+data class JobPosting (
+        @Id var id: Int = 0,
+        var company: String = "",
+        var title: String = "",
+        var minWage: Int = 0,
+        var maxWage: Int = 0
 )
