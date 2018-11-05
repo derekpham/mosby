@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Tracker</title>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jsgrid.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/jsgrid-theme.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/jsgrid.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/common.css" />
+</head>
+<script>
+    var data = [{Company: 'something', 'Date Applied': 'something',
+        'Application Site': 'something', 'Process': 'something', 'Status': 'something',
+        'Type': 'something'}];
+
+    $('#applications').jsGrid({
+        width: '100%',
+
+        data: data,
+
+        fields: [
+            {name: 'Company', type: 'text'},
+            {name: 'Date Applied', type: 'text'},
+            {name: 'Application Site', type: 'text'},
+            {name: 'Process', type: 'text'},
+            {name: 'Status', type: 'text'},
+            {name: 'Type', type: 'text'}
+        ]
+    });
+    console.log('hello, world');
+</script>
+<body>
+<h1>Job Applications</h1>
+<div id="applications"></div>
+</body>
+</html>

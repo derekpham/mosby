@@ -11,6 +11,6 @@ data class Application (
         var dateApplied: Date = Date.valueOf(LocalDate.MAX),
         var applicationSite: String = "",
         var process: String? = null,
-        var status: String = "pending",
-        var type: String  = "internship"
+        var status: String = "waiting (irrelevant)",
+        var type: String  = "internship (irrelevant)"
 )
